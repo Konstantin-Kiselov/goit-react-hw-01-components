@@ -26,3 +26,5 @@
 - [Задание 2 - Секция статистики](./statistics/)
 - [Задание 3 - Список друзей](./friend-list/)
 - [Задание 4 - История транзакций](./transaction-history/)
+
+# [Getting Started with Create React App](README.old.md)
