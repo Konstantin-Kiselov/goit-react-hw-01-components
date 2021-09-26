@@ -7,19 +7,19 @@ function TransactionHistory({ items }) {
     <table className="transaction-history">
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className="title">Type</th>
+          <th className="title">Amount</th>
+          <th className="title">Currency</th>
         </tr>
       </thead>
 
-      <tbody>
+      <tbody className="box">
         {items.map(({ amount, currency, type, id }) => {
           return (
             <tr key={id}>
-              <td>{type}</td>
-              <td>{amount}</td>
-              <td>{currency}</td>
+              <td className="item">{type}</td>
+              <td className="item">{amount}</td>
+              <td className="item">{currency}</td>
             </tr>
           );
         })}

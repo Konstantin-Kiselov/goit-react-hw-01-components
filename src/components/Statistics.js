@@ -11,7 +11,11 @@ function Statistics({ title, stats }) {
         {stats.map(({ id, label, percentage }) => {
           //   console.log(percentage);
           return (
-            <li className="item" key={id}>
+            <li
+              className="item"
+              style={{ backgroundColor: randomColor() }}
+              key={id}
+            >
               <span className="label">{label}</span>
               <span className="percentage">{percentage}</span>
             </li>
@@ -20,6 +24,19 @@ function Statistics({ title, stats }) {
       </ul>
     </section>
   );
+}
+
+function randomColor(color) {
+  color =
+    "rgb(" +
+    Math.round(Math.random() * 255) +
+    "," +
+    Math.round(Math.random() * 255) +
+    "," +
+    Math.round(Math.random() * 255) +
+    ")";
+
+  return color;
 }
 
 Statistics.propTypes = {
