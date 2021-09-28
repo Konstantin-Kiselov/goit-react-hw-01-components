@@ -1,0 +1,36 @@
+.transactionHistory {
+  border-collapse: collapse;
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  padding: 15px 0;
+  background-color: #3cc0c0;
+  color: #fff;
+  border: 1px solid #e2d5d5;
+  text-transform: uppercase;
+}
+
+.box {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.item {
+  border: 1px solid #d8d0d0;
+  width: 300px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.st {
+  background-color: rgb(219, 211, 211);
+}
+
+.st:nth-child(2n) {
+  background-color: #aaa6a6;
+}

@@ -1,42 +1,32 @@
 import PropTypes from "prop-types";
+import randomColor from "../../helper/randomColor";
+import s from "./Statistics.module.css";
+// console.log(s);
 
 function Statistics({ title, stats }) {
   //   console.log(stats);
 
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+    <section className={s.statistics}>
+      {title && <h2 className={s.title}>{title}</h2>}
 
-      <ul className="stat-list">
+      <ul className={s.statList}>
         {stats.map(({ id, label, percentage }) => {
           //   console.log(percentage);
           return (
             <li
-              className="item"
+              className={s.item}
               style={{ backgroundColor: randomColor() }}
               key={id}
             >
-              <span className="label">{label}</span>
-              <span className="percentage">{percentage}</span>
+              <span className={s.label}>{label}</span>
+              <span className={s.percentage}>{percentage}%</span>
             </li>
           );
         })}
       </ul>
     </section>
   );
-}
-
-function randomColor(color) {
-  color =
-    "rgb(" +
-    Math.round(Math.random() * 255) +
-    "," +
-    Math.round(Math.random() * 255) +
-    "," +
-    Math.round(Math.random() * 255) +
-    ")";
-
-  return color;
 }
 
 Statistics.propTypes = {
@@ -47,6 +37,7 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ),
+  title: PropTypes.string,
 };
 
 export default Statistics;

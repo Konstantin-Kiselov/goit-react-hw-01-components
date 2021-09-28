@@ -1,3 +1,5 @@
+@import-normalize;
+
 body {
   margin: 0;
   padding: 0;
@@ -14,38 +16,20 @@ code {
 }
 
 ul,
-ol {
+ol,
+h2 {
   margin: 0;
   padding: 0;
 }
 
-/* .profile {
-  background-color: aqua;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.profile .avatar {
-  display: block;
-  background-color: rgb(184, 175, 175);
-  width: 100%;
-  border-radius: 50%;
-}
-
-.stats {
-  display: flex;
-  flex-direction: row;
-}
-.stats li {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-} */
-
-.list {
+li {
   list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -53,110 +37,9 @@ ol {
   background-color: #989ba5;
 }
 
-.profile {
-  width: 350px;
-  margin: 30px auto;
-  text-align: center;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.profile .avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: #808080;
-  margin-top: 10px;
-}
-
-.stats {
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid #808080;
-}
-
-.stats-item {
-  display: flex;
-  width: 100px;
-  flex-direction: column;
-  padding: 15px;
-}
-
-.stats-item:not(:last-child) {
-  border-right: 1px solid #808080;
-}
-
-.quantity {
-  font-weight: 700;
-}
-
-.name {
-  font-size: 32px;
-  font-weight: 800;
-}
-
 /* ============== STATISTIC ============== */
-.statistics {
-  text-align: center;
-  padding: 20px;
-  background-color: #65cacc;
-  margin: 30px auto;
-}
-
-.stat-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.statistics .item {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  border: 1px solid #686464;
-  border-radius: 5%;
-  width: 170px;
-}
-
-.title {
-  background-color: #fff;
-  padding: 15px 0px;
-}
-
-.percentage {
-  font-size: 20px;
-  margin-top: 10px;
-}
 
 /* ============= TRANSACTION ============= */
-.transaction-history {
-  border-collapse: collapse;
-  width: 1000px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-tr:nth-child(2n) {
-  background-color: #d3d3d3;
-}
-
-.transaction-history .title {
-  padding: 15px 0;
-  background-color: #3cc0c0;
-  color: #fff;
-  border: 1px solid #e2d5d5;
-}
-
-.box {
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-
-.transaction-history .item {
-  border: 1px solid #d8d0d0;
-  padding: 10px;
-}
 
 /* ============= FRIEND LIST ============= */
 .friend-list .item {
